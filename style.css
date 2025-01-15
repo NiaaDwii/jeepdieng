@@ -1,0 +1,373 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+nav .logo img {
+  vertical-align: middle;
+  width: 125px;
+}
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.tombol {
+  background-color: #c86b85;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+section {
+  padding: 50px 0px 50px 0px;
+}
+section h3 {
+  font-size: 30px;
+}
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #c86b85;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+#paket {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.judul-paket {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px; /* Memberi jarak bawah */
+  text-align: center; /* Menjadikan teks di tengah */
+}
+.paket-jeep ul {
+  list-style-type: none; /* Menghilangkan bullet point */
+  padding-left: 0;
+  margin: 0;
+}
+.paket-jeep li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px; /* Ukuran teks daftar */
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+.list-wisata {
+  margin-top: 10px;
+  padding-left: 20px;
+  border: none;
+}
+.list-wisata li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+#aboutus {
+  text-align: center;
+}
+section p.ringkasan {
+  font-style: italic;
+  font-size: 15px;
+  color: #ababab;
+}
+section .konten-isi p {
+  font-style: normal;
+}
+nav.putih {
+  background: #fff;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+section.abuabu {
+  background-color: #f5f6f6;
+}
+.support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.support h6 {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.support img {
+  width: 50px;
+}
+.support div {
+  text-align: center;
+  width: 26%;
+}
+section#Gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+section#Gallery div {
+  padding: 10px;
+}
+section#Gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+section#Gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+section.quote {
+  background: url(aset/jeep-2.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: none;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+}
+section.quote .layar-dalam p {
+  display: inline;
+  padding: 40px;
+}
+.list-wisata li {
+  padding: 3px 0;
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+.list-wisata {
+  margin-top: 8px;
+}
+.paket-hemat-1 {
+  color: #006400;
+  font-weight: bold;
+}
+.paket-hemat-2 {
+  color: #008b8b;
+  font-weight: bold;
+}
+.price {
+  color: #ffd700;
+  font-weight: bold;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 5px;
+}
+#Gallery {
+  display: flex;
+  overflow-x: hidden; /* Menyembunyikan scroll bar */
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth; /* Transisi scroll lebih halus */
+  width: 100%;
+}
+#Gallery div {
+  flex: 0 0 auto; /* Elemen tidak mengecil */
+  width: 200px; /* Sesuaikan ukuran */
+}
+#Gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+#Contact {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+}
+.layar-dalam {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.col-4 {
+  flex: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.box a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.box a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #2f2f2f;
+  color: #ddd;
+  bottom: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 991.98px) {
+  .layar-dalam {
+    width: 90%;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  nav .menu ul li a {
+    color: #333;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+}
